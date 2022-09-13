@@ -4,38 +4,33 @@ import { Link } from "react-router-dom";
 
 import "./index.scss";
 
-export default function Login() {
+export default function ForgotPass() {
   return (
-    <div className="login">
+    <div className="forgot">
       <div className="logo">
         <img src={Logo} alt="" />
       </div>
-      <div className="text-center mt-4 name">Đăng nhập tài khoản </div>
+      <div className="text-center mt-4 name">Quên mật khẩu </div>
       <form className="p-3 mt-2">
         <div className="form-field d-flex align-items-center">
           <span className="fa fa-user"></span>
           <input
             type="text"
             name="username"
-            id="username"
+            id="userName"
             placeholder="Tài khoản"
           />
         </div>
 
         <div className="form-field d-flex align-items-center">
-          <span className="fa fa-key"></span>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Mật khẩu"
-          />
+          <span className="fa fa-at"></span>
+          <input type="email" name="email" id="email" placeholder="Email" />
         </div>
 
-        <button className="btn mt-3">Đăng nhập</button>
+        <button className="btn mt-3">Gửi mã</button>
       </form>
       <div className="text-center fs-6">
-        <Link to="/forgotpassword">Quên mật khẩu?</Link> hoặc
+        <Link to="/login">Đăng nhập</Link> hoặc
         <Link to="/register"> Đăng ký</Link>
       </div>
     </div>

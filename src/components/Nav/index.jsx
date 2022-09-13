@@ -24,7 +24,7 @@ export default function Navigation() {
           <img src={Logo} width="150" alt="FPT logo" />
         </Navbar.Brand>
         <Nav>
-          <Nav.Link as={Link} to="/" eventKey={"/home"}>
+          <Nav.Link as={Link} to="/introduce" eventKey={"/introduce"}>
             Trang chủ
           </Nav.Link>
           <Nav.Link as={Link} to="/courses" eventKey={"/courses"}>

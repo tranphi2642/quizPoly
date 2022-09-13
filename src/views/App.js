@@ -15,6 +15,7 @@ function App() {
         <Routes>
           {publicRouters.map((route, index) => {
             const Page = route.component
+            // console.log(route)
             return <Route key={index} path={route.path} element={<Page />} />
           })}
         </Routes>

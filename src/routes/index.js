@@ -4,11 +4,17 @@ import Login from '../views/Login'
 import Register from '../views/Register'
 import Courses from '../views/Courses'
 import Examination from '../views/Examination'
+import ForgotPass from '../views/ForgotPass'
+import Introduce from '../views/Introduce'
 
 const publicRouters = [
   {
     path: '/',
     component: Home,
+  },
+  {
+    path: '/introduce',
+    component: Introduce,
   },
   {
     path: '/courses',
@@ -29,6 +35,10 @@ const publicRouters = [
   {
     path: '/register',
     component: Register,
+  },
+  {
+    path: '/forgotpassword',
+    component: ForgotPass,
   },
 ]
 

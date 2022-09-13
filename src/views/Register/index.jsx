@@ -124,7 +124,7 @@ export default function Register() {
           <button className="btn mt-3">Đăng ký</button>
         </form>
         <div className="text-center fs-6">
-          <Link to="/">Quên mật khẩu?</Link> hoặc
+          <Link to="/forgotpassword">Quên mật khẩu?</Link> hoặc
           <Link to="/login"> Đăng nhập</Link>
         </div>
       </div>
