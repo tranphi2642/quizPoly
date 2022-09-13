@@ -1,11 +1,11 @@
-import React from 'react'
-import Logo from '../../assets/images/logoFPT.png'
-import { Link } from 'react-router-dom'
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/NavDropdown'
+import React from "react";
+import Logo from "../../assets/images/banner/logoFPT.png";
+import { Link } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
-import './index.scss'
+import "./index.scss";
 
 export default function Navigation() {
   return (
@@ -24,36 +24,36 @@ export default function Navigation() {
           <img src={Logo} width="150" alt="FPT logo" />
         </Navbar.Brand>
         <Nav>
-          <Nav.Link as={Link} to="/" eventKey={'/home'}>
-            Home
+          <Nav.Link as={Link} to="/" eventKey={"/home"}>
+            Trang chủ
           </Nav.Link>
-          <Nav.Link as={Link} to="/courses" eventKey={'/courses'}>
-            Courses
+          <Nav.Link as={Link} to="/courses" eventKey={"/courses"}>
+            Khoá học
           </Nav.Link>
-          <Nav.Link as={Link} to="/examination" eventKey={'/examination'}>
-            Examination Room
+          <Nav.Link as={Link} to="/examination" eventKey={"/examination"}>
+            Phòng thi
           </Nav.Link>
-          <Nav.Link as={Link} to="/contact" eventKey={'/contact'}>
-            Contact
+          <Nav.Link as={Link} to="/contact" eventKey={"/contact"}>
+            Liên hệ
           </Nav.Link>
         </Nav>
         <Nav>
-          <NavDropdown title="Language" id="collasible-nav-dropdown">
-            <NavDropdown.Item as={Link} to="/" eventKey={1}>
+          <NavDropdown title="Ngôn ngữ" id="collasible-nav-dropdown">
+            <NavDropdown.Item as={Link} to="/" eventKey={"/"}>
               English
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="/" eventKey={2}>
+            <NavDropdown.Item as={Link} to="/" eventKey={"/"}>
               Vietnamese
             </NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link as={Link} to="/login" eventKey={'/login'}>
-            Login
+          <Nav.Link as={Link} to="/login" eventKey={"/login"}>
+            Đăng nhập
           </Nav.Link>
-          <Nav.Link as={Link} to="/register" eventKey={'/register'}>
-            Register
+          <Nav.Link as={Link} to="/register" eventKey={"/register"}>
+            Đăng ký
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  )
+  );
 }
