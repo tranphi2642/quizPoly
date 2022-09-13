@@ -1,9 +1,16 @@
 import React from "react";
 
+import "./index.scss";
+
 export default function Courses() {
   return (
     <React.Fragment>
-      <h1>Courses</h1>
+      <div class="section-header ">
+        <div class="chat-bubble">
+          <span class="title">#TAG KHÓA HỌC FONT-END</span>
+          <div class="chat-bubble reverse" style={{ color: "#27b995" }}></div>
+        </div>
+      </div>
     </React.Fragment>
   );
 }
