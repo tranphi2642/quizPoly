@@ -6,11 +6,16 @@ import Courses from '../views/Courses'
 import Examination from '../views/Examination'
 import ForgotPass from '../views/ForgotPass'
 import Introduce from '../views/Introduce'
+import User from '../api/User'
 
 const publicRouters = [
   {
     path: '/',
     component: Home,
+  },
+  {
+    path: '/api/user',
+    component: User,
   },
   {
     path: '/introduce',
